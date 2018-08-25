@@ -14,3 +14,7 @@ if (hp <= 0) && (oGun.dead <= 5) {
 	instance_destroy();
 }
 
+
+//WE THE BEST MUSIC
+
+//sdfdsfdsf
