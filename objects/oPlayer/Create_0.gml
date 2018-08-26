@@ -3,7 +3,7 @@
 
 vsp = 0; //vertial speed
 grv = 0.1; //gravity
-walksp = 3; //walking speed
+walksp = 4; //walking speed
 hsp = walksp;
 
 controller = 0;

@@ -16,10 +16,10 @@ else{
 	image_angle = controller_angle; //
 }
 
-firingdelay -= 1;
+
 recoil = max(0, recoil - 1);
 
-if (firingdelay = 0){
+if (firingdelay < 0){
 	with(oPlayer){
 		instance_create_layer(x - 20, y + 20, "Player",oTriggered);
 	}
@@ -35,7 +35,9 @@ if(oTriggered){
 		y = oPlayer.y - 50
 	}
 }
-
+if(firingdelay > -1){
+	firingdelay -= 1;
+}
 if (mouse_check_button(mb_left) || gamepad_button_check(0, gp_shoulderlb)) && (firingdelay < 0){
 	recoil = 4;
 	firingdelay = 100;

@@ -29,7 +29,7 @@ if (done == 0){
 			image_index = 1;
 			}
 		//There's a little bit of pixels between oPlyaer and oWall.
-		//We wanna remove the spaces by place them in the closest position.
+		//We wanna remove the spaces by placing them in the closest position.
 		while (!place_meeting(x,y+sign(vsp),oWall)) { //sign(): return 1 or 0 depending on if hsp is positive or negative
 			y = y + sign(vsp); //increase/decrease x to 1
 		}
